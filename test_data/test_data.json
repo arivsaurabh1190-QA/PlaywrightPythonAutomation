@@ -1,0 +1,25 @@
+{
+  "valid_user": {
+    "email": "ariv.saurabh1190@gmail.com",
+    "password": "Starlord@123"
+  },
+  "invalid_user": {
+    "email": "wrong@gmail.com",
+    "password": "Starlord#8999"
+  },
+  "payment": {
+    "name_on_card": "Ariv",
+    "card_number": "456898562356",
+    "cvc": "311",
+    "expiry_month": "12",
+    "expiry_year": "2027"
+  },
+  "review": {
+    "name": "Ariv",
+    "email": "ariv.saurabh1190@gmail.com",
+    "review": "Great product! Highly recommended."
+  },
+  "order_comment": "Please deliver between 10am - 5pm"
+}
+
+
