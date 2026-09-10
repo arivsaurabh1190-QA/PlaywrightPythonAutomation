@@ -180,7 +180,7 @@ class SignupPage:
         self.country.select_option(label=country)
 
     # -----------------------------
-    # Account Creation
+    # Account Creation Done
     # -----------------------------
 
     def click_create_account(self):
