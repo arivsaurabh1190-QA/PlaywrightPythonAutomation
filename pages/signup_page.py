@@ -21,8 +21,8 @@ class SignupPage:
         )
 
         # Account Information
-        self.title_mr = page.locator("#id_gender1")
-        self.title_mrs = page.locator("#id_gender2")
+        self.title_mr = page.get_by_label("Mr.")
+        self.title_mrs = page.get_by_label("Mrs.")
 
         self.password = page.locator(
             "[data-qa='password']"
@@ -98,9 +98,9 @@ class SignupPage:
             "[data-qa='account-created']"
         )
 
-    # -----------------------------
+    # --------------------------------
     # Initial Signup
-    # -----------------------------
+    # --------------------------------
 
     def enter_signup_details(
         self,
@@ -113,9 +113,9 @@ class SignupPage:
     def click_signup(self):
         self.signup_button.click()
 
-    # -----------------------------
+    # --------------------------------
     # Account Information
-    # -----------------------------
+    # --------------------------------
 
     def select_title(self, title: str):
 
@@ -149,9 +149,9 @@ class SignupPage:
     def accept_special_offers(self):
         self.special_offers.check()
 
-    # -----------------------------
+    # --------------------------------
     # Address Information
-    # -----------------------------
+    # --------------------------------
 
     def enter_personal_details(
         self,
@@ -179,12 +179,15 @@ class SignupPage:
     def select_country(self, country: str):
         self.country.select_option(label=country)
 
-    # -----------------------------
-    # Account Creation Done
-    # -----------------------------
+    # --------------------------------
+    # Account Creation
+    # --------------------------------
 
     def click_create_account(self):
         self.create_account_button.click()
 
     def is_account_created(self):
         return self.account_created_message.is_visible()
+
+    
+    

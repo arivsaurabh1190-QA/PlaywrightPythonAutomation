@@ -6,20 +6,25 @@ class HomePage:
     def __init__(self, page: Page):
         self.page = page
 
-        self.signup_login_link = page.get_by_text(
-            "Signup / Login"
+        # Navigation
+        self.signup_login_link = page.get_by_role(
+            "link",
+            name="Signup / Login"
         )
 
-        self.products_link = page.get_by_text(
-            "Products"
+        self.products_link = page.get_by_role(
+            "link",
+            name="Products"
         )
 
-        self.cart_link = page.get_by_text(
-            "Cart"
+        self.cart_link = page.get_by_role(
+            "link",
+            name="Cart"
         )
 
-        self.home_link = page.get_by_text(
-            "Home"
+        self.home_link = page.get_by_role(
+            "link",
+            name="Home"
         )
 
     def navigate(self, base_url: str):

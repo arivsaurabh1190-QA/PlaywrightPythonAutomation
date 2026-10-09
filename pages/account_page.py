@@ -7,17 +7,37 @@ class AccountPage:
 
         self.page = page
 
-        self.logged_in_user = page.locator(
-            "li:has-text('Logged in as')"
+        # Account Created Page
+        self.account_created_message = page.locator(
+            "[data-qa='account-created']"
         )
 
+        self.continue_button = page.locator(
+            "[data-qa='continue-button']"
+        )
+
+        # Logged-in User
+        self.logged_in_user = page.get_by_text(
+            "Logged in as",
+            exact=False
+        )
+
+        # Delete Account
         self.delete_account = page.get_by_text(
-            "Delete Account"
+            "Delete Account",
+            exact=True
         )
 
+        # Account Deleted Page
         self.account_deleted_message = page.locator(
             "[data-qa='account-deleted']"
         )
+
+    def is_account_created(self):
+        return self.account_created_message.is_visible()
+
+    def click_continue(self):
+        self.continue_button.click()
 
     def is_logged_in(self):
         return self.logged_in_user.is_visible()

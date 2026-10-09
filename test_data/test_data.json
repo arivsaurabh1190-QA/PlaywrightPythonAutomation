@@ -1,25 +1,30 @@
 {
-  "valid_user": {
-    "email": "ariv.saurabh1190@gmail.com",
-    "password": "Starlord@123"
-  },
-  "invalid_user": {
-    "email": "wrong@gmail.com",
-    "password": "Starlord#8999"
-  },
-  "payment": {
-    "name_on_card": "Ariv",
-    "card_number": "456898562356",
-    "cvc": "311",
-    "expiry_month": "12",
-    "expiry_year": "2027"
-  },
-  "review": {
-    "name": "Ariv",
-    "email": "ariv.saurabh1190@gmail.com",
-    "review": "Great product! Highly recommended."
-  },
-  "order_comment": "Please deliver between 10am - 5pm"
+    "registration_user": {
+        "name": "Arvith",
+        "email": "arvith221299@gmail.com",
+        "title": "Mr",
+        "password": "Test@12345",
+
+        "date_of_birth": {
+            "day": "10",
+            "month": "5",
+            "year": "1990"
+        },
+
+        "newsletter": true,
+        "special_offers": true,
+
+        "address": {
+            "first_name": "Arvith",
+            "last_name": "Tootoo",
+            "company": "Test Company",
+            "address": "123 Test Street",
+            "address2": "Automation Area",
+            "country": "India",
+            "state": "Rajasthan",
+            "city": "Jaipur",
+            "zipcode": "302001",
+            "mobile_number": "9999999999"
+        }
+    }
 }
-
-
